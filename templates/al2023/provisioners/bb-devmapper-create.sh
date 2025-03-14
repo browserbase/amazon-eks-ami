@@ -1,5 +1,8 @@
 #!/bin/bash
-set -ex
+
+set -o pipefail
+set -o nounset
+set -o errexit
 
 sudo dnf install -y git make
 
